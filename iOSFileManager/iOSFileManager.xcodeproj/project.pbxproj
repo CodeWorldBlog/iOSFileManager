@@ -1,0 +1,1398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C148E13C2C19A62200F39B78 /* iOSFileManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E12D2C19A62200F39B78 /* iOSFileManagerApp.swift */; };
+		C148E13D2C19A62200F39B78 /* iOSFileManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C148E12F2C19A62200F39B78 /* iOSFileManager.xcdatamodeld */; };
+		C148E13E2C19A62200F39B78 /* FMPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E1302C19A62200F39B78 /* FMPersistenceController.swift */; };
+		C148E1402C19A62200F39B78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C148E1382C19A62200F39B78 /* Preview Assets.xcassets */; };
+		C148E1412C19A62200F39B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C148E13A2C19A62200F39B78 /* Assets.xcassets */; };
+		C148E14C2C1A07CF00F39B78 /* FolderEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E1462C1A07CF00F39B78 /* FolderEntity+CoreDataClass.swift */; };
+		C148E14D2C1A07CF00F39B78 /* FolderEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E1472C1A07CF00F39B78 /* FolderEntity+CoreDataProperties.swift */; };
+		C148E14E2C1A07CF00F39B78 /* FileEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E1482C1A07CF00F39B78 /* FileEntity+CoreDataClass.swift */; };
+		C148E14F2C1A07CF00F39B78 /* FileEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E1492C1A07CF00F39B78 /* FileEntity+CoreDataProperties.swift */; };
+		C148E1502C1A07CF00F39B78 /* StorageUnitEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E14A2C1A07CF00F39B78 /* StorageUnitEntity+CoreDataClass.swift */; };
+		C148E1512C1A07CF00F39B78 /* StorageUnitEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E14B2C1A07CF00F39B78 /* StorageUnitEntity+CoreDataProperties.swift */; };
+		C148E1572C1A095C00F39B78 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E1562C1A095C00F39B78 /* AppCoordinator.swift */; };
+		C148E1592C1A096E00F39B78 /* FMAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E1582C1A096E00F39B78 /* FMAppDependencies.swift */; };
+		C148E15D2C1A0F6200F39B78 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148E15C2C1A0F6200F39B78 /* Coordinator.swift */; };
+		C1D1E2572C2841D5001FB1D0 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2532C2841D5001FB1D0 /* Entity.swift */; };
+		C1D1E2582C2841D5001FB1D0 /* FMStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2542C2841D5001FB1D0 /* FMStorage.swift */; };
+		C1D1E2592C2841D5001FB1D0 /* MStorageQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2552C2841D5001FB1D0 /* MStorageQuery.swift */; };
+		C1D1E25B2C2844FE001FB1D0 /* StorageUnitDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E25A2C2844FE001FB1D0 /* StorageUnitDTO.swift */; };
+		C1D1E25E2C28452C001FB1D0 /* DocumentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E25D2C28452C001FB1D0 /* DocumentDTO.swift */; };
+		C1D1E2602C28453B001FB1D0 /* FileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E25F2C28453B001FB1D0 /* FileDTO.swift */; };
+		C1D1E2622C2883AE001FB1D0 /* FMCoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2612C2883AE001FB1D0 /* FMCoreDataStorage.swift */; };
+		C1D1E2642C28846B001FB1D0 /* FMCoreDataStorage+FMDocumentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2632C28846B001FB1D0 /* FMCoreDataStorage+FMDocumentStorage.swift */; };
+		C1D1E2672C294C3E001FB1D0 /* FolderEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2662C294C3E001FB1D0 /* FolderEntity+Mapping.swift */; };
+		C1D1E2692C297A2D001FB1D0 /* FileEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2682C297A2D001FB1D0 /* FileEntity+Mapping.swift */; };
+		C1D1E2752C298DE2001FB1D0 /* FMTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E26A2C298DE2001FB1D0 /* FMTabItem.swift */; };
+		C1D1E2762C298DE2001FB1D0 /* FMTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E26D2C298DE2001FB1D0 /* FMTabBarCoordinator.swift */; };
+		C1D1E2772C298DE2001FB1D0 /* FMTabBarCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E26E2C298DE2001FB1D0 /* FMTabBarCoordinatorView.swift */; };
+		C1D1E2782C298DE2001FB1D0 /* FMTabBarDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2702C298DE2001FB1D0 /* FMTabBarDependencies.swift */; };
+		C1D1E2792C298DE2001FB1D0 /* FMTabChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2722C298DE2001FB1D0 /* FMTabChildView.swift */; };
+		C1D1E27B2C298E49001FB1D0 /* FMAppNavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E27A2C298E49001FB1D0 /* FMAppNavigationState.swift */; };
+		C1D1E27D2C298FE4001FB1D0 /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E27C2C298FE4001FB1D0 /* AppCoordinatorView.swift */; };
+		C1D1E2932C29A5C1001FB1D0 /* FMFinderContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2832C29A5C1001FB1D0 /* FMFinderContentViewModel.swift */; };
+		C1D1E2942C29A5C1001FB1D0 /* FMFinderDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2852C29A5C1001FB1D0 /* FMFinderDependencies.swift */; };
+		C1D1E2972C29A5C1001FB1D0 /* FMFinderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E28A2C29A5C1001FB1D0 /* FMFinderContentView.swift */; };
+		C1D1E2982C29A5C1001FB1D0 /* FMFinderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E28C2C29A5C1001FB1D0 /* FMFinderCoordinator.swift */; };
+		C1D1E2992C29A5C1001FB1D0 /* FMFinderCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E28D2C29A5C1001FB1D0 /* FMFinderCoordinatorView.swift */; };
+		C1D1E2A62C2DC93F001FB1D0 /* FMScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E29B2C2DC93F001FB1D0 /* FMScannerView.swift */; };
+		C1D1E2A72C2DC93F001FB1D0 /* FMScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E29D2C2DC93F001FB1D0 /* FMScannerViewModel.swift */; };
+		C1D1E2A92C2DC93F001FB1D0 /* FMScannerDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2A12C2DC93F001FB1D0 /* FMScannerDependencies.swift */; };
+		C1D1E2AA2C2DC93F001FB1D0 /* FMScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2A32C2DC93F001FB1D0 /* FMScannerCoordinator.swift */; };
+		C1D1E2AB2C2DC93F001FB1D0 /* FMScannerCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2A42C2DC93F001FB1D0 /* FMScannerCoordinatorView.swift */; };
+		C1D1E2B72C2DC9C1001FB1D0 /* FMSettingDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2AC2C2DC9C0001FB1D0 /* FMSettingDependencies.swift */; };
+		C1D1E2B82C2DC9C1001FB1D0 /* FMSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2AE2C2DC9C0001FB1D0 /* FMSettingViewModel.swift */; };
+		C1D1E2B92C2DC9C1001FB1D0 /* FMSettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2B02C2DC9C1001FB1D0 /* FMSettingCoordinator.swift */; };
+		C1D1E2BA2C2DC9C1001FB1D0 /* FMSettingCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2B12C2DC9C1001FB1D0 /* FMSettingCoordinatorView.swift */; };
+		C1D1E2BC2C2DC9C1001FB1D0 /* FMSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2B52C2DC9C1001FB1D0 /* FMSettingView.swift */; };
+		C1D1E2C92C3124D0001FB1D0 /* FMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2C82C3124D0001FB1D0 /* FMViewModel.swift */; };
+		C1D1E2EE2C31251C001FB1D0 /* MFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2CA2C31251C001FB1D0 /* MFont.swift */; };
+		C1D1E2EF2C31251C001FB1D0 /* SettingLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2CC2C31251C001FB1D0 /* SettingLocalization.swift */; };
+		C1D1E2F02C31251C001FB1D0 /* FinderLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2CD2C31251C001FB1D0 /* FinderLocalization.swift */; };
+		C1D1E2F12C31251C001FB1D0 /* ScannerLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2CE2C31251C001FB1D0 /* ScannerLocalization.swift */; };
+		C1D1E2FD2C31251C001FB1D0 /* FMColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2E22C31251C001FB1D0 /* FMColorPalette.swift */; };
+		C1D1E2FE2C31251C001FB1D0 /* FMDarkColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2E32C31251C001FB1D0 /* FMDarkColorPalette.swift */; };
+		C1D1E2FF2C31251C001FB1D0 /* FMLightColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2E42C31251C001FB1D0 /* FMLightColorPalette.swift */; };
+		C1D1E3002C31251C001FB1D0 /* FMDefaultThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2E62C31251C001FB1D0 /* FMDefaultThemeService.swift */; };
+		C1D1E3012C31251C001FB1D0 /* FMTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2E72C31251C001FB1D0 /* FMTheme.swift */; };
+		C1D1E3022C31251C001FB1D0 /* FMThemeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2E82C31251C001FB1D0 /* FMThemeable.swift */; };
+		C1D1E3032C31251C001FB1D0 /* UAObfuscatedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E2EA2C31251C001FB1D0 /* UAObfuscatedString.swift */; };
+		C1D1E30A2C31288F001FB1D0 /* FMAllDocumentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3092C31288F001FB1D0 /* FMAllDocumentUseCase.swift */; };
+		C1D1E30C2C3128F9001FB1D0 /* FMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E30B2C3128F9001FB1D0 /* FMDocument.swift */; };
+		C1D1E30F2C312929001FB1D0 /* FMStorageUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E30E2C312929001FB1D0 /* FMStorageUnit.swift */; };
+		C1D1E3112C312BFC001FB1D0 /* FMFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3102C312BFC001FB1D0 /* FMFile.swift */; };
+		C1D1E3132C312C76001FB1D0 /* FMFetchSettingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3122C312C76001FB1D0 /* FMFetchSettingUseCase.swift */; };
+		C1D1E3172C312CD0001FB1D0 /* FMSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3162C312CD0001FB1D0 /* FMSetting.swift */; };
+		C1D1E31B2C313BB5001FB1D0 /* OrderedCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E31A2C313BB5001FB1D0 /* OrderedCase.swift */; };
+		C1D1E31D2C313C61001FB1D0 /* GeneralLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E31C2C313C61001FB1D0 /* GeneralLocalization.swift */; };
+		C1D1E3202C3286E2001FB1D0 /* UserDefaultPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E31F2C3286E2001FB1D0 /* UserDefaultPropertyWrapper.swift */; };
+		C1D1E32C2C3307C7001FB1D0 /* Dictionary+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3212C3307C7001FB1D0 /* Dictionary+Data.swift */; };
+		C1D1E32D2C3307C7001FB1D0 /* Bundle+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3232C3307C7001FB1D0 /* Bundle+Info.swift */; };
+		C1D1E32E2C3307C7001FB1D0 /* Data+FileHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3242C3307C7001FB1D0 /* Data+FileHandling.swift */; };
+		C1D1E32F2C3307C7001FB1D0 /* FileManager+DirectoryAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3252C3307C7001FB1D0 /* FileManager+DirectoryAccess.swift */; };
+		C1D1E3302C3307C7001FB1D0 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3272C3307C7001FB1D0 /* Date+Format.swift */; };
+		C1D1E3312C3307C7001FB1D0 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3292C3307C7001FB1D0 /* String+Localization.swift */; };
+		C1D1E3322C3307C7001FB1D0 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E32A2C3307C7001FB1D0 /* String+Path.swift */; };
+		C1D1E3352C330FC5001FB1D0 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3332C330FC5001FB1D0 /* Color+Hex.swift */; };
+		C1D1E33D2C331051001FB1D0 /* CryptoKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E33A2C331051001FB1D0 /* CryptoKeys.swift */; };
+		C1D1E33E2C331051001FB1D0 /* FMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E33B2C331051001FB1D0 /* FMError.swift */; };
+		C1D1E3732C3310E9001FB1D0 /* FMDocuemntRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3592C3310E9001FB1D0 /* FMDocuemntRepository.swift */; };
+		C1D1E3742C3310E9001FB1D0 /* FMSettingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E35B2C3310E9001FB1D0 /* FMSettingRepository.swift */; };
+		C1D1E3782C341B7D001FB1D0 /* FMDocumentDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3772C341B7D001FB1D0 /* FMDocumentDependencies.swift */; };
+		C1D1E37A2C343AC3001FB1D0 /* FMAppSettingDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3792C343AC3001FB1D0 /* FMAppSettingDependencies.swift */; };
+		C1D1E37C2C343CBD001FB1D0 /* FMCoreDataStorage+FMSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E37B2C343CBD001FB1D0 /* FMCoreDataStorage+FMSettingStorage.swift */; };
+		C1D1E37E2C343E36001FB1D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C1D1E37D2C343E36001FB1D0 /* Localizable.xcstrings */; };
+		C1D1E3802C343ECF001FB1D0 /* TabLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E37F2C343ECF001FB1D0 /* TabLocalization.swift */; };
+		C1D1E3842C3546B4001FB1D0 /* iOSLoader in Frameworks */ = {isa = PBXBuildFile; productRef = C1D1E3832C3546B4001FB1D0 /* iOSLoader */; };
+		C1D1E3902C354B43001FB1D0 /* FinderPreviewDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3882C354B43001FB1D0 /* FinderPreviewDependency.swift */; };
+		C1D1E3912C354B43001FB1D0 /* ScannerPreviewDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E38A2C354B43001FB1D0 /* ScannerPreviewDependency.swift */; };
+		C1D1E3922C354B43001FB1D0 /* AppPreviewDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E38C2C354B43001FB1D0 /* AppPreviewDependency.swift */; };
+		C1D1E3932C354B43001FB1D0 /* TabBarPreviewDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E38D2C354B43001FB1D0 /* TabBarPreviewDependency.swift */; };
+		C1D1E3982C36AAC3001FB1D0 /* SettingEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3962C36AAC3001FB1D0 /* SettingEntity+CoreDataClass.swift */; };
+		C1D1E39F2C36B4DC001FB1D0 /* SettingEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E39E2C36B4DC001FB1D0 /* SettingEntity+Mapping.swift */; };
+		C1D1E3A12C36B4FE001FB1D0 /* FMSettingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3A02C36B4FE001FB1D0 /* FMSettingDTO.swift */; };
+		C1D1E3A32C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3A22C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift */; };
+		C1D1E3AD2C39ABF4001FB1D0 /* DefaultTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1D1E3AB2C39ABF4001FB1D0 /* DefaultTheme.plist */; };
+		C1D1E3B02C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3AF2C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C148E12D2C19A62200F39B78 /* iOSFileManagerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSFileManagerApp.swift; sourceTree = "<group>"; };
+		C148E1302C19A62200F39B78 /* FMPersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPersistenceController.swift; sourceTree = "<group>"; };
+		C148E1372C19A62200F39B78 /* iOSFileManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSFileManager.xcdatamodel; sourceTree = "<group>"; };
+		C148E1382C19A62200F39B78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C148E13A2C19A62200F39B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C148E1462C1A07CF00F39B78 /* FolderEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FolderEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C148E1472C1A07CF00F39B78 /* FolderEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FolderEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C148E1482C1A07CF00F39B78 /* FileEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C148E1492C1A07CF00F39B78 /* FileEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C148E14A2C1A07CF00F39B78 /* StorageUnitEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageUnitEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C148E14B2C1A07CF00F39B78 /* StorageUnitEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageUnitEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C148E1562C1A095C00F39B78 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C148E1582C1A096E00F39B78 /* FMAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAppDependencies.swift; sourceTree = "<group>"; };
+		C148E15C2C1A0F6200F39B78 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C1B420432C1761B800170E6A /* iOSFileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D1E2532C2841D5001FB1D0 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		C1D1E2542C2841D5001FB1D0 /* FMStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMStorage.swift; sourceTree = "<group>"; };
+		C1D1E2552C2841D5001FB1D0 /* MStorageQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MStorageQuery.swift; sourceTree = "<group>"; };
+		C1D1E25A2C2844FE001FB1D0 /* StorageUnitDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUnitDTO.swift; sourceTree = "<group>"; };
+		C1D1E25D2C28452C001FB1D0 /* DocumentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDTO.swift; sourceTree = "<group>"; };
+		C1D1E25F2C28453B001FB1D0 /* FileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDTO.swift; sourceTree = "<group>"; };
+		C1D1E2612C2883AE001FB1D0 /* FMCoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMCoreDataStorage.swift; sourceTree = "<group>"; };
+		C1D1E2632C28846B001FB1D0 /* FMCoreDataStorage+FMDocumentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FMCoreDataStorage+FMDocumentStorage.swift"; sourceTree = "<group>"; };
+		C1D1E2662C294C3E001FB1D0 /* FolderEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FolderEntity+Mapping.swift"; sourceTree = "<group>"; };
+		C1D1E2682C297A2D001FB1D0 /* FileEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileEntity+Mapping.swift"; sourceTree = "<group>"; };
+		C1D1E26A2C298DE2001FB1D0 /* FMTabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabItem.swift; sourceTree = "<group>"; };
+		C1D1E26D2C298DE2001FB1D0 /* FMTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabBarCoordinator.swift; sourceTree = "<group>"; };
+		C1D1E26E2C298DE2001FB1D0 /* FMTabBarCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabBarCoordinatorView.swift; sourceTree = "<group>"; };
+		C1D1E2702C298DE2001FB1D0 /* FMTabBarDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabBarDependencies.swift; sourceTree = "<group>"; };
+		C1D1E2722C298DE2001FB1D0 /* FMTabChildView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabChildView.swift; sourceTree = "<group>"; };
+		C1D1E27A2C298E49001FB1D0 /* FMAppNavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAppNavigationState.swift; sourceTree = "<group>"; };
+		C1D1E27C2C298FE4001FB1D0 /* AppCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorView.swift; sourceTree = "<group>"; };
+		C1D1E2832C29A5C1001FB1D0 /* FMFinderContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMFinderContentViewModel.swift; sourceTree = "<group>"; };
+		C1D1E2852C29A5C1001FB1D0 /* FMFinderDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMFinderDependencies.swift; sourceTree = "<group>"; };
+		C1D1E28A2C29A5C1001FB1D0 /* FMFinderContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMFinderContentView.swift; sourceTree = "<group>"; };
+		C1D1E28C2C29A5C1001FB1D0 /* FMFinderCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMFinderCoordinator.swift; sourceTree = "<group>"; };
+		C1D1E28D2C29A5C1001FB1D0 /* FMFinderCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMFinderCoordinatorView.swift; sourceTree = "<group>"; };
+		C1D1E29B2C2DC93F001FB1D0 /* FMScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMScannerView.swift; sourceTree = "<group>"; };
+		C1D1E29D2C2DC93F001FB1D0 /* FMScannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMScannerViewModel.swift; sourceTree = "<group>"; };
+		C1D1E2A12C2DC93F001FB1D0 /* FMScannerDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMScannerDependencies.swift; sourceTree = "<group>"; };
+		C1D1E2A32C2DC93F001FB1D0 /* FMScannerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMScannerCoordinator.swift; sourceTree = "<group>"; };
+		C1D1E2A42C2DC93F001FB1D0 /* FMScannerCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMScannerCoordinatorView.swift; sourceTree = "<group>"; };
+		C1D1E2AC2C2DC9C0001FB1D0 /* FMSettingDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSettingDependencies.swift; sourceTree = "<group>"; };
+		C1D1E2AE2C2DC9C0001FB1D0 /* FMSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSettingViewModel.swift; sourceTree = "<group>"; };
+		C1D1E2B02C2DC9C1001FB1D0 /* FMSettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSettingCoordinator.swift; sourceTree = "<group>"; };
+		C1D1E2B12C2DC9C1001FB1D0 /* FMSettingCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSettingCoordinatorView.swift; sourceTree = "<group>"; };
+		C1D1E2B52C2DC9C1001FB1D0 /* FMSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSettingView.swift; sourceTree = "<group>"; };
+		C1D1E2C82C3124D0001FB1D0 /* FMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMViewModel.swift; sourceTree = "<group>"; };
+		C1D1E2CA2C31251C001FB1D0 /* MFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFont.swift; sourceTree = "<group>"; };
+		C1D1E2CC2C31251C001FB1D0 /* SettingLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLocalization.swift; sourceTree = "<group>"; };
+		C1D1E2CD2C31251C001FB1D0 /* FinderLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderLocalization.swift; sourceTree = "<group>"; };
+		C1D1E2CE2C31251C001FB1D0 /* ScannerLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerLocalization.swift; sourceTree = "<group>"; };
+		C1D1E2E22C31251C001FB1D0 /* FMColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMColorPalette.swift; sourceTree = "<group>"; };
+		C1D1E2E32C31251C001FB1D0 /* FMDarkColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDarkColorPalette.swift; sourceTree = "<group>"; };
+		C1D1E2E42C31251C001FB1D0 /* FMLightColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMLightColorPalette.swift; sourceTree = "<group>"; };
+		C1D1E2E62C31251C001FB1D0 /* FMDefaultThemeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDefaultThemeService.swift; sourceTree = "<group>"; };
+		C1D1E2E72C31251C001FB1D0 /* FMTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTheme.swift; sourceTree = "<group>"; };
+		C1D1E2E82C31251C001FB1D0 /* FMThemeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMThemeable.swift; sourceTree = "<group>"; };
+		C1D1E2EA2C31251C001FB1D0 /* UAObfuscatedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAObfuscatedString.swift; sourceTree = "<group>"; };
+		C1D1E3092C31288F001FB1D0 /* FMAllDocumentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAllDocumentUseCase.swift; sourceTree = "<group>"; };
+		C1D1E30B2C3128F9001FB1D0 /* FMDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDocument.swift; sourceTree = "<group>"; };
+		C1D1E30E2C312929001FB1D0 /* FMStorageUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMStorageUnit.swift; sourceTree = "<group>"; };
+		C1D1E3102C312BFC001FB1D0 /* FMFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMFile.swift; sourceTree = "<group>"; };
+		C1D1E3122C312C76001FB1D0 /* FMFetchSettingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMFetchSettingUseCase.swift; sourceTree = "<group>"; };
+		C1D1E3162C312CD0001FB1D0 /* FMSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSetting.swift; sourceTree = "<group>"; };
+		C1D1E31A2C313BB5001FB1D0 /* OrderedCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedCase.swift; sourceTree = "<group>"; };
+		C1D1E31C2C313C61001FB1D0 /* GeneralLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLocalization.swift; sourceTree = "<group>"; };
+		C1D1E31F2C3286E2001FB1D0 /* UserDefaultPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultPropertyWrapper.swift; sourceTree = "<group>"; };
+		C1D1E3212C3307C7001FB1D0 /* Dictionary+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Data.swift"; sourceTree = "<group>"; };
+		C1D1E3232C3307C7001FB1D0 /* Bundle+Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Info.swift"; sourceTree = "<group>"; };
+		C1D1E3242C3307C7001FB1D0 /* Data+FileHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+FileHandling.swift"; sourceTree = "<group>"; };
+		C1D1E3252C3307C7001FB1D0 /* FileManager+DirectoryAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DirectoryAccess.swift"; sourceTree = "<group>"; };
+		C1D1E3272C3307C7001FB1D0 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		C1D1E3292C3307C7001FB1D0 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		C1D1E32A2C3307C7001FB1D0 /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
+		C1D1E3332C330FC5001FB1D0 /* Color+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		C1D1E33A2C331051001FB1D0 /* CryptoKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoKeys.swift; sourceTree = "<group>"; };
+		C1D1E33B2C331051001FB1D0 /* FMError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMError.swift; sourceTree = "<group>"; };
+		C1D1E3592C3310E9001FB1D0 /* FMDocuemntRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDocuemntRepository.swift; sourceTree = "<group>"; };
+		C1D1E35B2C3310E9001FB1D0 /* FMSettingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSettingRepository.swift; sourceTree = "<group>"; };
+		C1D1E3772C341B7D001FB1D0 /* FMDocumentDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDocumentDependencies.swift; sourceTree = "<group>"; };
+		C1D1E3792C343AC3001FB1D0 /* FMAppSettingDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAppSettingDependencies.swift; sourceTree = "<group>"; };
+		C1D1E37B2C343CBD001FB1D0 /* FMCoreDataStorage+FMSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FMCoreDataStorage+FMSettingStorage.swift"; sourceTree = "<group>"; };
+		C1D1E37D2C343E36001FB1D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C1D1E37F2C343ECF001FB1D0 /* TabLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLocalization.swift; sourceTree = "<group>"; };
+		C1D1E3882C354B43001FB1D0 /* FinderPreviewDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderPreviewDependency.swift; sourceTree = "<group>"; };
+		C1D1E38A2C354B43001FB1D0 /* ScannerPreviewDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerPreviewDependency.swift; sourceTree = "<group>"; };
+		C1D1E38C2C354B43001FB1D0 /* AppPreviewDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreviewDependency.swift; sourceTree = "<group>"; };
+		C1D1E38D2C354B43001FB1D0 /* TabBarPreviewDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPreviewDependency.swift; sourceTree = "<group>"; };
+		C1D1E3962C36AAC3001FB1D0 /* SettingEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C1D1E39E2C36B4DC001FB1D0 /* SettingEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingEntity+Mapping.swift"; sourceTree = "<group>"; };
+		C1D1E3A02C36B4FE001FB1D0 /* FMSettingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSettingDTO.swift; sourceTree = "<group>"; };
+		C1D1E3A22C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C1D1E3AB2C39ABF4001FB1D0 /* DefaultTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultTheme.plist; sourceTree = "<group>"; };
+		C1D1E3AF2C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicPropertyWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1B420402C1761B800170E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D1E3842C3546B4001FB1D0 /* iOSLoader in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C148E12B2C19A62200F39B78 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1562C1A095C00F39B78 /* AppCoordinator.swift */,
+				C1D1E27C2C298FE4001FB1D0 /* AppCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C148E12C2C19A62200F39B78 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1582C1A096E00F39B78 /* FMAppDependencies.swift */,
+				C1D1E3772C341B7D001FB1D0 /* FMDocumentDependencies.swift */,
+				C1D1E3792C343AC3001FB1D0 /* FMAppSettingDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C148E12E2C19A62200F39B78 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C148E12B2C19A62200F39B78 /* Coordinator */,
+				C148E12C2C19A62200F39B78 /* Dependencies */,
+				C148E12D2C19A62200F39B78 /* iOSFileManagerApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C148E1312C19A62200F39B78 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2562C2841D5001FB1D0 /* Protocol */,
+				C1D1E2512C2841B6001FB1D0 /* CoreDataStorage */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		C148E1322C19A62200F39B78 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1432C1A072A00F39B78 /* DTO */,
+				C148E1312C19A62200F39B78 /* Persistence */,
+				C1D1E35D2C3310E9001FB1D0 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C148E1332C19A62200F39B78 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1442C1A073500F39B78 /* Models */,
+				C1D1E3052C3127F6001FB1D0 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C148E1352C19A62200F39B78 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1522C1A081F00F39B78 /* TabView */,
+				C148E1542C1A085D00F39B78 /* Finder */,
+				C148E1552C1A090A00F39B78 /* Scanner */,
+				C148E1532C1A084900F39B78 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C148E1362C19A62200F39B78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C148E12E2C19A62200F39B78 /* Application */,
+				C148E1322C19A62200F39B78 /* Data */,
+				C148E1332C19A62200F39B78 /* Domain */,
+				C148E1352C19A62200F39B78 /* Modules */,
+				C1D1E2ED2C31251C001FB1D0 /* Infrastructure */,
+				C148E15A2C1A0F0A00F39B78 /* FrameworkExtension */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C148E1392C19A62200F39B78 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1382C19A62200F39B78 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C148E13B2C19A62200F39B78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3AC2C39ABF4001FB1D0 /* Theme */,
+				C1D1E3852C3549B8001FB1D0 /* SwiftUI_Preview */,
+				C148E1392C19A62200F39B78 /* Preview Content */,
+				C148E13A2C19A62200F39B78 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C148E1432C1A072A00F39B78 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3952C3664BB001FB1D0 /* Setting */,
+				C1D1E3942C3664AD001FB1D0 /* FileHandling */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		C148E1442C1A073500F39B78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E33C2C331051001FB1D0 /* General */,
+				C1D1E3142C312CA0001FB1D0 /* Document */,
+				C1D1E3152C312CB1001FB1D0 /* Settings */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C148E1452C1A07A300F39B78 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E39B2C36AAF3001FB1D0 /* Setting */,
+				C1D1E39A2C36AAE1001FB1D0 /* FileManager */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C148E1522C1A081F00F39B78 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E26F2C298DE2001FB1D0 /* Coordinator */,
+				C1D1E2712C298DE2001FB1D0 /* Dependencies */,
+				C1D1E26B2C298DE2001FB1D0 /* TabItem */,
+				C1D1E2742C298DE2001FB1D0 /* View */,
+				C1D1E26C2C298DE2001FB1D0 /* ViewModel */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		C148E1532C1A084900F39B78 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2B22C2DC9C1001FB1D0 /* Coordinator */,
+				C1D1E2AD2C2DC9C0001FB1D0 /* Dependencies */,
+				C1D1E2B42C2DC9C1001FB1D0 /* Protocol */,
+				C1D1E2B62C2DC9C1001FB1D0 /* View */,
+				C1D1E2AF2C2DC9C0001FB1D0 /* ViewModel */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C148E1542C1A085D00F39B78 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E28E2C29A5C1001FB1D0 /* Coordinator */,
+				C1D1E2862C29A5C1001FB1D0 /* Dependencies */,
+				C1D1E28B2C29A5C1001FB1D0 /* View */,
+				C1D1E2842C29A5C1001FB1D0 /* ViewModel */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		C148E1552C1A090A00F39B78 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2A52C2DC93F001FB1D0 /* Coordinator */,
+				C1D1E2A22C2DC93F001FB1D0 /* Dependencies */,
+				C1D1E2A02C2DC93F001FB1D0 /* Protocol */,
+				C1D1E29C2C2DC93F001FB1D0 /* View */,
+				C1D1E29E2C2DC93F001FB1D0 /* ViewModel */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		C148E15A2C1A0F0A00F39B78 /* FrameworkExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3372C330FD9001FB1D0 /* UIKit */,
+				C1D1E3182C313B7A001FB1D0 /* System */,
+				C1D1E2C72C3074DE001FB1D0 /* ViewModel */,
+				C148E15B2C1A0F4300F39B78 /* Coordinator */,
+			);
+			path = FrameworkExtension;
+			sourceTree = "<group>";
+		};
+		C148E15B2C1A0F4300F39B78 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C148E15C2C1A0F6200F39B78 /* Coordinator.swift */,
+				C1D1E27A2C298E49001FB1D0 /* FMAppNavigationState.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C1B4203A2C1761B800170E6A = {
+			isa = PBXGroup;
+			children = (
+				C1B420452C1761B800170E6A /* iOSFileManager */,
+				C1B420442C1761B800170E6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1B420442C1761B800170E6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1B420432C1761B800170E6A /* iOSFileManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1B420452C1761B800170E6A /* iOSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1362C19A62200F39B78 /* Classes */,
+				C148E13B2C19A62200F39B78 /* Resources */,
+			);
+			path = iOSFileManager;
+			sourceTree = "<group>";
+		};
+		C1D1E2512C2841B6001FB1D0 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1302C19A62200F39B78 /* FMPersistenceController.swift */,
+				C1D1E2612C2883AE001FB1D0 /* FMCoreDataStorage.swift */,
+				C1D1E2632C28846B001FB1D0 /* FMCoreDataStorage+FMDocumentStorage.swift */,
+				C1D1E37B2C343CBD001FB1D0 /* FMCoreDataStorage+FMSettingStorage.swift */,
+				C148E12F2C19A62200F39B78 /* iOSFileManager.xcdatamodeld */,
+				C1D1E2652C294A91001FB1D0 /* Entity+Mapping */,
+				C148E1452C1A07A300F39B78 /* Entity */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		C1D1E2562C2841D5001FB1D0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2532C2841D5001FB1D0 /* Entity.swift */,
+				C1D1E2542C2841D5001FB1D0 /* FMStorage.swift */,
+				C1D1E2552C2841D5001FB1D0 /* MStorageQuery.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C1D1E2652C294A91001FB1D0 /* Entity+Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E39D2C36AB0E001FB1D0 /* Setting */,
+				C1D1E39C2C36AB02001FB1D0 /* FileManager */,
+			);
+			path = "Entity+Mapping";
+			sourceTree = "<group>";
+		};
+		C1D1E26B2C298DE2001FB1D0 /* TabItem */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E26A2C298DE2001FB1D0 /* FMTabItem.swift */,
+			);
+			path = TabItem;
+			sourceTree = "<group>";
+		};
+		C1D1E26C2C298DE2001FB1D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1D1E26F2C298DE2001FB1D0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E26D2C298DE2001FB1D0 /* FMTabBarCoordinator.swift */,
+				C1D1E26E2C298DE2001FB1D0 /* FMTabBarCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C1D1E2712C298DE2001FB1D0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2702C298DE2001FB1D0 /* FMTabBarDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C1D1E2732C298DE2001FB1D0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2722C298DE2001FB1D0 /* FMTabChildView.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C1D1E2742C298DE2001FB1D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2732C298DE2001FB1D0 /* Protocol */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1D1E2842C29A5C1001FB1D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2832C29A5C1001FB1D0 /* FMFinderContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1D1E2862C29A5C1001FB1D0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2852C29A5C1001FB1D0 /* FMFinderDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C1D1E28B2C29A5C1001FB1D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E28A2C29A5C1001FB1D0 /* FMFinderContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1D1E28E2C29A5C1001FB1D0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E28C2C29A5C1001FB1D0 /* FMFinderCoordinator.swift */,
+				C1D1E28D2C29A5C1001FB1D0 /* FMFinderCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C1D1E29C2C2DC93F001FB1D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E29B2C2DC93F001FB1D0 /* FMScannerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1D1E29E2C2DC93F001FB1D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E29D2C2DC93F001FB1D0 /* FMScannerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1D1E2A02C2DC93F001FB1D0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C1D1E2A22C2DC93F001FB1D0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2A12C2DC93F001FB1D0 /* FMScannerDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C1D1E2A52C2DC93F001FB1D0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2A32C2DC93F001FB1D0 /* FMScannerCoordinator.swift */,
+				C1D1E2A42C2DC93F001FB1D0 /* FMScannerCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C1D1E2AD2C2DC9C0001FB1D0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2AC2C2DC9C0001FB1D0 /* FMSettingDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C1D1E2AF2C2DC9C0001FB1D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2AE2C2DC9C0001FB1D0 /* FMSettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1D1E2B22C2DC9C1001FB1D0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2B02C2DC9C1001FB1D0 /* FMSettingCoordinator.swift */,
+				C1D1E2B12C2DC9C1001FB1D0 /* FMSettingCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C1D1E2B42C2DC9C1001FB1D0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C1D1E2B62C2DC9C1001FB1D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2B52C2DC9C1001FB1D0 /* FMSettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1D1E2C72C3074DE001FB1D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2C82C3124D0001FB1D0 /* FMViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1D1E2CB2C31251C001FB1D0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2CA2C31251C001FB1D0 /* MFont.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C1D1E2CF2C31251C001FB1D0 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E37D2C343E36001FB1D0 /* Localizable.xcstrings */,
+				C1D1E2CC2C31251C001FB1D0 /* SettingLocalization.swift */,
+				C1D1E2CD2C31251C001FB1D0 /* FinderLocalization.swift */,
+				C1D1E2CE2C31251C001FB1D0 /* ScannerLocalization.swift */,
+				C1D1E31C2C313C61001FB1D0 /* GeneralLocalization.swift */,
+				C1D1E37F2C343ECF001FB1D0 /* TabLocalization.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		C1D1E2E12C31251C001FB1D0 /* ASIcons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ASIcons;
+			sourceTree = "<group>";
+		};
+		C1D1E2E52C31251C001FB1D0 /* ColorPalette */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2E22C31251C001FB1D0 /* FMColorPalette.swift */,
+				C1D1E2E32C31251C001FB1D0 /* FMDarkColorPalette.swift */,
+				C1D1E2E42C31251C001FB1D0 /* FMLightColorPalette.swift */,
+			);
+			path = ColorPalette;
+			sourceTree = "<group>";
+		};
+		C1D1E2E92C31251C001FB1D0 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2E12C31251C001FB1D0 /* ASIcons */,
+				C1D1E2E52C31251C001FB1D0 /* ColorPalette */,
+				C1D1E2E62C31251C001FB1D0 /* FMDefaultThemeService.swift */,
+				C1D1E2E72C31251C001FB1D0 /* FMTheme.swift */,
+				C1D1E2E82C31251C001FB1D0 /* FMThemeable.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C1D1E2EB2C31251C001FB1D0 /* UAObfuscatedString */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2EA2C31251C001FB1D0 /* UAObfuscatedString.swift */,
+			);
+			path = UAObfuscatedString;
+			sourceTree = "<group>";
+		};
+		C1D1E2EC2C31251C001FB1D0 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2EB2C31251C001FB1D0 /* UAObfuscatedString */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		C1D1E2ED2C31251C001FB1D0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2CB2C31251C001FB1D0 /* Font */,
+				C1D1E2CF2C31251C001FB1D0 /* Localization */,
+				C1D1E2E92C31251C001FB1D0 /* Theme */,
+				C1D1E2EC2C31251C001FB1D0 /* ThirdParty */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C1D1E3052C3127F6001FB1D0 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3072C312828001FB1D0 /* FileManager */,
+				C1D1E3062C312823001FB1D0 /* Settings */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C1D1E3062C312823001FB1D0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3122C312C76001FB1D0 /* FMFetchSettingUseCase.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C1D1E3072C312828001FB1D0 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3092C31288F001FB1D0 /* FMAllDocumentUseCase.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		C1D1E3142C312CA0001FB1D0 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E30E2C312929001FB1D0 /* FMStorageUnit.swift */,
+				C1D1E30B2C3128F9001FB1D0 /* FMDocument.swift */,
+				C1D1E3102C312BFC001FB1D0 /* FMFile.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		C1D1E3152C312CB1001FB1D0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3162C312CD0001FB1D0 /* FMSetting.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C1D1E3182C313B7A001FB1D0 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3B12C3AB7EE001FB1D0 /* PropertyWrapper */,
+				C1D1E3222C3307C7001FB1D0 /* Collection */,
+				C1D1E3282C3307C7001FB1D0 /* Date */,
+				C1D1E3262C3307C7001FB1D0 /* FileManager */,
+				C1D1E32B2C3307C7001FB1D0 /* String */,
+				C1D1E3192C313B9E001FB1D0 /* Enum */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		C1D1E3192C313B9E001FB1D0 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E31A2C313BB5001FB1D0 /* OrderedCase.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		C1D1E31E2C328441001FB1D0 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E31F2C3286E2001FB1D0 /* UserDefaultPropertyWrapper.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		C1D1E3222C3307C7001FB1D0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3212C3307C7001FB1D0 /* Dictionary+Data.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		C1D1E3262C3307C7001FB1D0 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3232C3307C7001FB1D0 /* Bundle+Info.swift */,
+				C1D1E3242C3307C7001FB1D0 /* Data+FileHandling.swift */,
+				C1D1E3252C3307C7001FB1D0 /* FileManager+DirectoryAccess.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		C1D1E3282C3307C7001FB1D0 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3272C3307C7001FB1D0 /* Date+Format.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		C1D1E32B2C3307C7001FB1D0 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3292C3307C7001FB1D0 /* String+Localization.swift */,
+				C1D1E32A2C3307C7001FB1D0 /* String+Path.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		C1D1E3372C330FD9001FB1D0 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3382C330FE5001FB1D0 /* Color */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C1D1E3382C330FE5001FB1D0 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3332C330FC5001FB1D0 /* Color+Hex.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		C1D1E33C2C331051001FB1D0 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E33A2C331051001FB1D0 /* CryptoKeys.swift */,
+				C1D1E33B2C331051001FB1D0 /* FMError.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C1D1E3582C3310E9001FB1D0 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3592C3310E9001FB1D0 /* FMDocuemntRepository.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		C1D1E35C2C3310E9001FB1D0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E35B2C3310E9001FB1D0 /* FMSettingRepository.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C1D1E35D2C3310E9001FB1D0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3582C3310E9001FB1D0 /* FileManager */,
+				C1D1E35C2C3310E9001FB1D0 /* Settings */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C1D1E3852C3549B8001FB1D0 /* SwiftUI_Preview */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E38E2C354B43001FB1D0 /* Application */,
+				C1D1E3892C354B43001FB1D0 /* Finder */,
+				C1D1E38B2C354B43001FB1D0 /* Scanner */,
+			);
+			path = SwiftUI_Preview;
+			sourceTree = "<group>";
+		};
+		C1D1E3892C354B43001FB1D0 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3882C354B43001FB1D0 /* FinderPreviewDependency.swift */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		C1D1E38B2C354B43001FB1D0 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E38A2C354B43001FB1D0 /* ScannerPreviewDependency.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		C1D1E38E2C354B43001FB1D0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E38C2C354B43001FB1D0 /* AppPreviewDependency.swift */,
+				C1D1E38D2C354B43001FB1D0 /* TabBarPreviewDependency.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C1D1E3942C3664AD001FB1D0 /* FileHandling */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E25A2C2844FE001FB1D0 /* StorageUnitDTO.swift */,
+				C1D1E25D2C28452C001FB1D0 /* DocumentDTO.swift */,
+				C1D1E25F2C28453B001FB1D0 /* FileDTO.swift */,
+			);
+			path = FileHandling;
+			sourceTree = "<group>";
+		};
+		C1D1E3952C3664BB001FB1D0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3A02C36B4FE001FB1D0 /* FMSettingDTO.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C1D1E39A2C36AAE1001FB1D0 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C148E1462C1A07CF00F39B78 /* FolderEntity+CoreDataClass.swift */,
+				C148E1472C1A07CF00F39B78 /* FolderEntity+CoreDataProperties.swift */,
+				C148E1482C1A07CF00F39B78 /* FileEntity+CoreDataClass.swift */,
+				C148E1492C1A07CF00F39B78 /* FileEntity+CoreDataProperties.swift */,
+				C148E14A2C1A07CF00F39B78 /* StorageUnitEntity+CoreDataClass.swift */,
+				C148E14B2C1A07CF00F39B78 /* StorageUnitEntity+CoreDataProperties.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		C1D1E39B2C36AAF3001FB1D0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3962C36AAC3001FB1D0 /* SettingEntity+CoreDataClass.swift */,
+				C1D1E3A22C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C1D1E39C2C36AB02001FB1D0 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E2662C294C3E001FB1D0 /* FolderEntity+Mapping.swift */,
+				C1D1E2682C297A2D001FB1D0 /* FileEntity+Mapping.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		C1D1E39D2C36AB0E001FB1D0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E39E2C36B4DC001FB1D0 /* SettingEntity+Mapping.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C1D1E3AC2C39ABF4001FB1D0 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3AB2C39ABF4001FB1D0 /* DefaultTheme.plist */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C1D1E3AE2C3AA9C6001FB1D0 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E3AF2C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		C1D1E3B12C3AB7EE001FB1D0 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C1D1E31E2C328441001FB1D0 /* UserDefault */,
+				C1D1E3AE2C3AA9C6001FB1D0 /* Thread */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1B420422C1761B800170E6A /* iOSFileManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B420562C1761B900170E6A /* Build configuration list for PBXNativeTarget "iOSFileManager" */;
+			buildPhases = (
+				C1B4203F2C1761B800170E6A /* Sources */,
+				C1B420402C1761B800170E6A /* Frameworks */,
+				C1B420412C1761B800170E6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSFileManager;
+			packageProductDependencies = (
+				C1D1E3832C3546B4001FB1D0 /* iOSLoader */,
+			);
+			productName = iOSFileManager;
+			productReference = C1B420432C1761B800170E6A /* iOSFileManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1B4203B2C1761B800170E6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C1B420422C1761B800170E6A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C1B4203E2C1761B800170E6A /* Build configuration list for PBXProject "iOSFileManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"en-IN",
+			);
+			mainGroup = C1B4203A2C1761B800170E6A;
+			packageReferences = (
+				C1D1E3822C3546B4001FB1D0 /* XCRemoteSwiftPackageReference "iOSLoader" */,
+			);
+			productRefGroup = C1B420442C1761B800170E6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1B420422C1761B800170E6A /* iOSFileManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1B420412C1761B800170E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D1E3AD2C39ABF4001FB1D0 /* DefaultTheme.plist in Resources */,
+				C148E1412C19A62200F39B78 /* Assets.xcassets in Resources */,
+				C148E1402C19A62200F39B78 /* Preview Assets.xcassets in Resources */,
+				C1D1E37E2C343E36001FB1D0 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1B4203F2C1761B800170E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D1E2972C29A5C1001FB1D0 /* FMFinderContentView.swift in Sources */,
+				C1D1E2692C297A2D001FB1D0 /* FileEntity+Mapping.swift in Sources */,
+				C1D1E32E2C3307C7001FB1D0 /* Data+FileHandling.swift in Sources */,
+				C1D1E2F12C31251C001FB1D0 /* ScannerLocalization.swift in Sources */,
+				C1D1E30C2C3128F9001FB1D0 /* FMDocument.swift in Sources */,
+				C1D1E3202C3286E2001FB1D0 /* UserDefaultPropertyWrapper.swift in Sources */,
+				C1D1E2A72C2DC93F001FB1D0 /* FMScannerViewModel.swift in Sources */,
+				C148E1592C1A096E00F39B78 /* FMAppDependencies.swift in Sources */,
+				C1D1E2B92C2DC9C1001FB1D0 /* FMSettingCoordinator.swift in Sources */,
+				C1D1E3012C31251C001FB1D0 /* FMTheme.swift in Sources */,
+				C1D1E33D2C331051001FB1D0 /* CryptoKeys.swift in Sources */,
+				C1D1E3902C354B43001FB1D0 /* FinderPreviewDependency.swift in Sources */,
+				C1D1E2FE2C31251C001FB1D0 /* FMDarkColorPalette.swift in Sources */,
+				C1D1E2992C29A5C1001FB1D0 /* FMFinderCoordinatorView.swift in Sources */,
+				C1D1E3742C3310E9001FB1D0 /* FMSettingRepository.swift in Sources */,
+				C1D1E3032C31251C001FB1D0 /* UAObfuscatedString.swift in Sources */,
+				C1D1E3002C31251C001FB1D0 /* FMDefaultThemeService.swift in Sources */,
+				C148E1572C1A095C00F39B78 /* AppCoordinator.swift in Sources */,
+				C1D1E2782C298DE2001FB1D0 /* FMTabBarDependencies.swift in Sources */,
+				C1D1E25B2C2844FE001FB1D0 /* StorageUnitDTO.swift in Sources */,
+				C1D1E2572C2841D5001FB1D0 /* Entity.swift in Sources */,
+				C148E15D2C1A0F6200F39B78 /* Coordinator.swift in Sources */,
+				C1D1E3802C343ECF001FB1D0 /* TabLocalization.swift in Sources */,
+				C1D1E39F2C36B4DC001FB1D0 /* SettingEntity+Mapping.swift in Sources */,
+				C148E13E2C19A62200F39B78 /* FMPersistenceController.swift in Sources */,
+				C1D1E3982C36AAC3001FB1D0 /* SettingEntity+CoreDataClass.swift in Sources */,
+				C1D1E3A32C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift in Sources */,
+				C1D1E2602C28453B001FB1D0 /* FileDTO.swift in Sources */,
+				C1D1E32D2C3307C7001FB1D0 /* Bundle+Info.swift in Sources */,
+				C1D1E3352C330FC5001FB1D0 /* Color+Hex.swift in Sources */,
+				C148E13C2C19A62200F39B78 /* iOSFileManagerApp.swift in Sources */,
+				C1D1E30A2C31288F001FB1D0 /* FMAllDocumentUseCase.swift in Sources */,
+				C1D1E3312C3307C7001FB1D0 /* String+Localization.swift in Sources */,
+				C1D1E2B72C2DC9C1001FB1D0 /* FMSettingDependencies.swift in Sources */,
+				C1D1E3732C3310E9001FB1D0 /* FMDocuemntRepository.swift in Sources */,
+				C1D1E2AA2C2DC93F001FB1D0 /* FMScannerCoordinator.swift in Sources */,
+				C1D1E2FD2C31251C001FB1D0 /* FMColorPalette.swift in Sources */,
+				C1D1E2EF2C31251C001FB1D0 /* SettingLocalization.swift in Sources */,
+				C1D1E3B02C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift in Sources */,
+				C1D1E30F2C312929001FB1D0 /* FMStorageUnit.swift in Sources */,
+				C1D1E2F02C31251C001FB1D0 /* FinderLocalization.swift in Sources */,
+				C1D1E32C2C3307C7001FB1D0 /* Dictionary+Data.swift in Sources */,
+				C1D1E37C2C343CBD001FB1D0 /* FMCoreDataStorage+FMSettingStorage.swift in Sources */,
+				C1D1E2592C2841D5001FB1D0 /* MStorageQuery.swift in Sources */,
+				C1D1E3112C312BFC001FB1D0 /* FMFile.swift in Sources */,
+				C1D1E37A2C343AC3001FB1D0 /* FMAppSettingDependencies.swift in Sources */,
+				C1D1E2982C29A5C1001FB1D0 /* FMFinderCoordinator.swift in Sources */,
+				C1D1E3912C354B43001FB1D0 /* ScannerPreviewDependency.swift in Sources */,
+				C1D1E2AB2C2DC93F001FB1D0 /* FMScannerCoordinatorView.swift in Sources */,
+				C1D1E2622C2883AE001FB1D0 /* FMCoreDataStorage.swift in Sources */,
+				C1D1E3922C354B43001FB1D0 /* AppPreviewDependency.swift in Sources */,
+				C148E14C2C1A07CF00F39B78 /* FolderEntity+CoreDataClass.swift in Sources */,
+				C1D1E3022C31251C001FB1D0 /* FMThemeable.swift in Sources */,
+				C1D1E2932C29A5C1001FB1D0 /* FMFinderContentViewModel.swift in Sources */,
+				C1D1E2A92C2DC93F001FB1D0 /* FMScannerDependencies.swift in Sources */,
+				C1D1E2752C298DE2001FB1D0 /* FMTabItem.swift in Sources */,
+				C1D1E3322C3307C7001FB1D0 /* String+Path.swift in Sources */,
+				C1D1E2772C298DE2001FB1D0 /* FMTabBarCoordinatorView.swift in Sources */,
+				C148E14D2C1A07CF00F39B78 /* FolderEntity+CoreDataProperties.swift in Sources */,
+				C1D1E2EE2C31251C001FB1D0 /* MFont.swift in Sources */,
+				C1D1E25E2C28452C001FB1D0 /* DocumentDTO.swift in Sources */,
+				C1D1E3782C341B7D001FB1D0 /* FMDocumentDependencies.swift in Sources */,
+				C1D1E2A62C2DC93F001FB1D0 /* FMScannerView.swift in Sources */,
+				C1D1E2BC2C2DC9C1001FB1D0 /* FMSettingView.swift in Sources */,
+				C148E14E2C1A07CF00F39B78 /* FileEntity+CoreDataClass.swift in Sources */,
+				C1D1E3132C312C76001FB1D0 /* FMFetchSettingUseCase.swift in Sources */,
+				C1D1E2672C294C3E001FB1D0 /* FolderEntity+Mapping.swift in Sources */,
+				C1D1E27B2C298E49001FB1D0 /* FMAppNavigationState.swift in Sources */,
+				C148E14F2C1A07CF00F39B78 /* FileEntity+CoreDataProperties.swift in Sources */,
+				C1D1E31D2C313C61001FB1D0 /* GeneralLocalization.swift in Sources */,
+				C148E1502C1A07CF00F39B78 /* StorageUnitEntity+CoreDataClass.swift in Sources */,
+				C1D1E2792C298DE2001FB1D0 /* FMTabChildView.swift in Sources */,
+				C1D1E3172C312CD0001FB1D0 /* FMSetting.swift in Sources */,
+				C1D1E2BA2C2DC9C1001FB1D0 /* FMSettingCoordinatorView.swift in Sources */,
+				C148E1512C1A07CF00F39B78 /* StorageUnitEntity+CoreDataProperties.swift in Sources */,
+				C1D1E2642C28846B001FB1D0 /* FMCoreDataStorage+FMDocumentStorage.swift in Sources */,
+				C1D1E2582C2841D5001FB1D0 /* FMStorage.swift in Sources */,
+				C1D1E3A12C36B4FE001FB1D0 /* FMSettingDTO.swift in Sources */,
+				C1D1E2762C298DE2001FB1D0 /* FMTabBarCoordinator.swift in Sources */,
+				C1D1E31B2C313BB5001FB1D0 /* OrderedCase.swift in Sources */,
+				C148E13D2C19A62200F39B78 /* iOSFileManager.xcdatamodeld in Sources */,
+				C1D1E33E2C331051001FB1D0 /* FMError.swift in Sources */,
+				C1D1E2B82C2DC9C1001FB1D0 /* FMSettingViewModel.swift in Sources */,
+				C1D1E32F2C3307C7001FB1D0 /* FileManager+DirectoryAccess.swift in Sources */,
+				C1D1E3302C3307C7001FB1D0 /* Date+Format.swift in Sources */,
+				C1D1E2942C29A5C1001FB1D0 /* FMFinderDependencies.swift in Sources */,
+				C1D1E27D2C298FE4001FB1D0 /* AppCoordinatorView.swift in Sources */,
+				C1D1E3932C354B43001FB1D0 /* TabBarPreviewDependency.swift in Sources */,
+				C1D1E2FF2C31251C001FB1D0 /* FMLightColorPalette.swift in Sources */,
+				C1D1E2C92C3124D0001FB1D0 /* FMViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1B420542C1761B900170E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1B420552C1761B900170E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1B420572C1761B900170E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSFileManager/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YJFUQX265;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sn.iOSFileManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1B420582C1761B900170E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSFileManager/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YJFUQX265;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sn.iOSFileManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1B4203E2C1761B800170E6A /* Build configuration list for PBXProject "iOSFileManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B420542C1761B900170E6A /* Debug */,
+				C1B420552C1761B900170E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B420562C1761B900170E6A /* Build configuration list for PBXNativeTarget "iOSFileManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B420572C1761B900170E6A /* Debug */,
+				C1B420582C1761B900170E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1D1E3822C3546B4001FB1D0 /* XCRemoteSwiftPackageReference "iOSLoader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nagpal-saurav/iOSLoader.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1D1E3832C3546B4001FB1D0 /* iOSLoader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1D1E3822C3546B4001FB1D0 /* XCRemoteSwiftPackageReference "iOSLoader" */;
+			productName = iOSLoader;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C148E12F2C19A62200F39B78 /* iOSFileManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C148E1372C19A62200F39B78 /* iOSFileManager.xcdatamodel */,
+			);
+			currentVersion = C148E1372C19A62200F39B78 /* iOSFileManager.xcdatamodel */;
+			path = iOSFileManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1B4203B2C1761B800170E6A /* Project object */;
+}

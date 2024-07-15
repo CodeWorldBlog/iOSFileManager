@@ -1,0 +1,15 @@
+{
+  "originHash" : "27633f042b02087b1f04e047c55768aff62341ebc39aa2a3409109535f252a35",
+  "pins" : [
+    {
+      "identity" : "iosloader",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nagpal-saurav/iOSLoader.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b54d17af08aad2248e3cb11260cbcfdb72ba77cb"
+      }
+    }
+  ],
+  "version" : 3
+}

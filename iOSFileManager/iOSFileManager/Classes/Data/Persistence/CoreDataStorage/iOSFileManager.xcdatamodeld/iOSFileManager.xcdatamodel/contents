@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FileEntity" representedClassName="FileEntity" parentEntity="StorageUnitEntity" syncable="YES"/>
+    <entity name="FolderEntity" representedClassName="FolderEntity" parentEntity="StorageUnitEntity" syncable="YES">
+        <relationship name="childs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StorageUnitEntity" inverseName="folder" inverseEntity="StorageUnitEntity"/>
+    </entity>
+    <entity name="SettingEntity" representedClassName="SettingEntity" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="StorageUnitEntity" representedClassName="StorageUnitEntity" syncable="YES">
+        <attribute name="creationTimestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="size" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="folder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FolderEntity" inverseName="childs" inverseEntity="FolderEntity"/>
+    </entity>
+</model>
