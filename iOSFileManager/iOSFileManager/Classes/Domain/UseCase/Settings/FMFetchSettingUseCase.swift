@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol FMSettingUseCase {
-    func fetchAllSettings() async -> [FMSetting]
+    func fetchAllSettings() async -> [FMSettings]
 }
 
 class DefaultFMSettingUseCase: FMSettingUseCase {
@@ -19,7 +19,7 @@ class DefaultFMSettingUseCase: FMSettingUseCase {
         self.repository = dependencies.resolveSettingRepository()
     }
     
-    func fetchAllSettings() async -> [FMSetting] {
+    func fetchAllSettings() async -> [FMSettings] {
         return await self.repository.fetchAppSettings()
     }
 }

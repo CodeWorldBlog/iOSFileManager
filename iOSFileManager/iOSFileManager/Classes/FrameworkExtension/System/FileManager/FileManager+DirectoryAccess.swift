@@ -7,29 +7,35 @@
 
 import Foundation
 
-enum DefaultDirectory {
-    case document
-    case cache
-}
 
 extension FileManager {
-    static func pathForDefaultDirectory(_ directory: DefaultDirectory) -> String? {
-        switch directory {
-        case .document:
-            return (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as [String]).first
-        case .cache:
-            return (NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true) as [String]).first
-        }
-    }
-    
-    static func urlForDefaultDirectory(_ directory: DefaultDirectory) -> URL? {
-        switch directory {
-        case .document:
-            return try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-        case .cache:
-            return try? FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+    enum Directory {
+        case document
+        case cache
+        case library
+        
+        var path: String? {
+            switch self {
+            case .document:
+                return (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as [String]).first
+            case .cache:
+                return (NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true) as [String]).first
+            case .library:
+                return (NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true) as [String]).first
+            }
         }
         
+        var url: URL  {
+            get throws {
+                switch self {
+                case .document:
+                    return try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                case .cache:
+                    return try FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                case .library:
+                    return try FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                }
+            }
+        }
     }
-
 }

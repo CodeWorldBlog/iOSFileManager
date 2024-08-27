@@ -102,6 +102,7 @@
 		C1D1E3A32C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3A22C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift */; };
 		C1D1E3AD2C39ABF4001FB1D0 /* DefaultTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1D1E3AB2C39ABF4001FB1D0 /* DefaultTheme.plist */; };
 		C1D1E3B02C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1E3AF2C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift */; };
+		C1DE88E82C46A41600F79C34 /* FMDocumentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE88E72C46A41600F79C34 /* FMDocumentCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -200,6 +201,7 @@
 		C1D1E3A22C36BB87001FB1D0 /* SettingEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C1D1E3AB2C39ABF4001FB1D0 /* DefaultTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultTheme.plist; sourceTree = "<group>"; };
 		C1D1E3AF2C3AAA1D001FB1D0 /* AtomicPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicPropertyWrapper.swift; sourceTree = "<group>"; };
+		C1DE88E72C46A41600F79C34 /* FMDocumentCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDocumentCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -744,6 +746,7 @@
 				C1D1E30E2C312929001FB1D0 /* FMStorageUnit.swift */,
 				C1D1E30B2C3128F9001FB1D0 /* FMDocument.swift */,
 				C1D1E3102C312BFC001FB1D0 /* FMFile.swift */,
+				C1DE88E72C46A41600F79C34 /* FMDocumentCategory.swift */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -1075,6 +1078,7 @@
 				C1D1E2A72C2DC93F001FB1D0 /* FMScannerViewModel.swift in Sources */,
 				C148E1592C1A096E00F39B78 /* FMAppDependencies.swift in Sources */,
 				C1D1E2B92C2DC9C1001FB1D0 /* FMSettingCoordinator.swift in Sources */,
+				C1DE88E82C46A41600F79C34 /* FMDocumentCategory.swift in Sources */,
 				C1D1E3012C31251C001FB1D0 /* FMTheme.swift in Sources */,
 				C1D1E33D2C331051001FB1D0 /* CryptoKeys.swift in Sources */,
 				C1D1E3902C354B43001FB1D0 /* FinderPreviewDependency.swift in Sources */,

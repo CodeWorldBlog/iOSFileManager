@@ -8,12 +8,35 @@
 import Foundation
 import SwiftUI
 
-enum FMSetting: OrderedCase {
-    case fontSize(size: Double)
+@dynamicMemberLookup
+struct FMSettings {
+    /*case fontSize(size: Double)
     case folderIcon(color: Color)
-    case fileColor(color: Color)
+    case fileColor(color: Color)*/
     
-    var allOrderedCase: [any OrderedCase] {
-        return [FMSetting.fontSize(size: 14), FMSetting.folderIcon(color: .yellow), FMSetting.fileColor(color: .gray)]
+    subscript(dynamicMember key: String) -> AnyObject {
+        get {
+            return UserDefaults.standard.value(forKey: key) as AnyObject
+        } set {
+            UserDefaults.standard.setValue(newValue, forKey: key)
+        }
+    }
+}
+@dynamicMemberLookup
+struct ThreeDView {
+    public var shadowDepth: Float
+    public var angle: Float
+    private(set) var _view: LoginView
+    
+    subscript<T>(dynamicMember keyPath: KeyPath<LoginView, T>) -> T {
+        return _view[keyPath: keyPath]
+    }
+}
+
+struct LoginView: View {
+    var username: String
+    
+    var body: some View {
+        Text("User")
     }
 }

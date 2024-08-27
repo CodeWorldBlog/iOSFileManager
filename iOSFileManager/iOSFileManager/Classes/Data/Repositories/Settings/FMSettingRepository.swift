@@ -18,7 +18,7 @@ protocol FMSettingRepository {
     /// - Return:
     ///   - success: Event fired in success case
     ///   - failure: Event fired in failure case
-    func fetchAppSettings() async -> [FMSetting]
+    func fetchAppSettings() async -> [FMSettings]
 }
 
 class DefaultFMSettingRepository: FMSettingRepository {
@@ -31,7 +31,7 @@ class DefaultFMSettingRepository: FMSettingRepository {
     }
     
     
-    func fetchAppSettings() async -> [FMSetting] {
+    func fetchAppSettings() async -> [FMSettings] {
         let settingDTOs = await self.settingLocalStorage.fetchAllSettings()
         return self.settingsFromDTOs(settingDTOs)
     }
@@ -39,8 +39,8 @@ class DefaultFMSettingRepository: FMSettingRepository {
 
 
 fileprivate extension DefaultFMSettingRepository {
-    func settingsFromDTOs(_ dtos: [SettingDTO]) -> [FMSetting] {
-        var settigns: [FMSetting] = []
+    func settingsFromDTOs(_ dtos: [SettingDTO]) -> [FMSettings] {
+        var settigns: [FMSettings] = []
         for dto in dtos {
             
         }
