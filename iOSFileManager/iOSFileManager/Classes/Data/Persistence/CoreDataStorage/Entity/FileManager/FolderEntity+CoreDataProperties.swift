@@ -24,28 +24,28 @@ extension FolderEntity {
 extension FolderEntity {
 
     @objc(insertObject:inChildsAtIndex:)
-    @NSManaged public func insertIntoChilds(_ value: StorageUnitEntity, at idx: Int)
+    @NSManaged public func insertIntoChilds(_ value: DocumentEntity, at idx: Int)
 
     @objc(removeObjectFromChildsAtIndex:)
     @NSManaged public func removeFromChilds(at idx: Int)
 
     @objc(insertChilds:atIndexes:)
-    @NSManaged public func insertIntoChilds(_ values: [StorageUnitEntity], at indexes: NSIndexSet)
+    @NSManaged public func insertIntoChilds(_ values: [DocumentEntity], at indexes: NSIndexSet)
 
     @objc(removeChildsAtIndexes:)
     @NSManaged public func removeFromChilds(at indexes: NSIndexSet)
 
     @objc(replaceObjectInChildsAtIndex:withObject:)
-    @NSManaged public func replaceChilds(at idx: Int, with value: StorageUnitEntity)
+    @NSManaged public func replaceChilds(at idx: Int, with value: DocumentEntity)
 
     @objc(replaceChildsAtIndexes:withChilds:)
-    @NSManaged public func replaceChilds(at indexes: NSIndexSet, with values: [StorageUnitEntity])
+    @NSManaged public func replaceChilds(at indexes: NSIndexSet, with values: [DocumentEntity])
 
     @objc(addChildsObject:)
-    @NSManaged public func addToChilds(_ value: StorageUnitEntity)
+    @NSManaged public func addToChilds(_ value: DocumentEntity)
 
     @objc(removeChildsObject:)
-    @NSManaged public func removeFromChilds(_ value: StorageUnitEntity)
+    @NSManaged public func removeFromChilds(_ value: DocumentEntity)
 
     @objc(addChilds:)
     @NSManaged public func addToChilds(_ values: NSOrderedSet)

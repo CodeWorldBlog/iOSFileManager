@@ -10,17 +10,23 @@ import SwiftUI
 
 class FMFinderCoordinator: Coordinator {
     private let appDependencies: FMAppDependencies
-    private(set) var feedDependencies: FMFinderDependencies
+    lazy private(set) var feedDependencies: FMFinderDependencies = {
+        let actions = FMFinderCoordinatorAction(displayDocument: self.displayDocument)
+        return DefaultFMFinderDependencies(dependencies: self.appDependencies, coordActions: actions)
+    }()
     fileprivate(set) var appNavigationState: FMAppNavigationState
-    @UserDefaultPersist(defaultKey: "isCoachMarkShown", defaultValue: false) var isCoachMarkShown: Bool?
-    @AtomicPropertyWrapper var counter: Int = 1
+    @Published var displayDocument: Bool = false
+    fileprivate(set) var documentCoordinater: FMDocumentCoordinator?
     
     init(dependencies: FMAppDependencies, appNavigationState: FMAppNavigationState) {
         self.appDependencies = dependencies
-        self.feedDependencies = DefaultFMFinderDependencies(dependencies: dependencies)
         self.appNavigationState = appNavigationState
-        _isCoachMarkShown.wrappedValue = true
     }
-
+    
+    func displayDocument(_ document: FMDocument) {
+        self.documentCoordinater = FMDocumentCoordinator(dependencies: self.appDependencies, appNavigationState: self.appNavigationState)
+        self.displayDocument = true
+        
+    }
 }
 

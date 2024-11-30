@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(StorageUnitEntity)
-public class StorageUnitEntity: NSManagedObject {
+public class DocumentEntity: NSManagedObject {
 
 }

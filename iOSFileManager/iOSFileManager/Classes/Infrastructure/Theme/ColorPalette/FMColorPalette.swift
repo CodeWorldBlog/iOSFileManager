@@ -11,6 +11,7 @@ import SwiftUI
 public class FMColorPalette: Decodable {
     fileprivate(set) var appBackgroundColor: Color
     fileprivate(set) var appTintColor: Color
+    fileprivate(set) var primaryBackgroundColor: Color
     fileprivate(set) var navBackgroundColour: Color
     fileprivate(set) var borderColor: Color
     
@@ -33,5 +34,7 @@ public class FMColorPalette: Decodable {
         
         let appTintColorRaw = try container.decode(String.self, forKey: .appTintColor)
         self.appTintColor = Color(hex: appTintColorRaw) ?? .cyan
+        
+        self.primaryBackgroundColor = Color("primaryBackgroundColor")
     }
 }

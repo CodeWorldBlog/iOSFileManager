@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(FolderEntity)
-public class FolderEntity: StorageUnitEntity {
+public class FolderEntity: DocumentEntity {
 
 }

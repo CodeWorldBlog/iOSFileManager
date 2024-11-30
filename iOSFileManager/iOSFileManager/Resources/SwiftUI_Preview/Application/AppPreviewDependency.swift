@@ -18,11 +18,17 @@ class AppPreviewDependency: FMAppDependencies {
         return AppCoordinator()
     }
     
-    func resolveFetchDocumentUseCase() -> any FMAllDocumentUseCase {
-        DefaultFMAllDocumentUseCase(dependencies: self)
+    
+    func resolveFetchDocumentUseCase() -> any FMAllCategoryUseCase {
+        DefaultFMAllCategoryUseCase(dependencies: self)
     }
     
-    func resolveDocumentRepository() -> any FMDocuemntRepository {
+    func resolveFetchDocumentUseCase() -> any FMAllFolderUseCase {
+        DefaultFMFolderDocumentUseCase(dependencies: self)
+    }
+    
+    
+    func resolveDocumentRepository() -> any FMDocumentRepository {
         DefaultFMDocuemntRepository(dependencies: self)
     }
     

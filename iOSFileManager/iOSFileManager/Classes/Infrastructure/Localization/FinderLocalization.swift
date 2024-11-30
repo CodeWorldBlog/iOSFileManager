@@ -8,5 +8,5 @@
 import Foundation
 
 struct FinderLocalization {
-   
+    static let noRecentDocumentMsg  = LocalizedStringResource(stringLiteral: "NoRecentDocument")
 }

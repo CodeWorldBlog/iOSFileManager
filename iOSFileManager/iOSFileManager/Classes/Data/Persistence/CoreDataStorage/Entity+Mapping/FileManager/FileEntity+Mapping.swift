@@ -11,7 +11,7 @@ extension FileEntity: Entity {
     typealias EntityDTO = FileDTO
 
     func toDTO() -> FileDTO? {
-        guard let name = self.name, let creationTimestamp = self.creationTimestamp else {
+        guard let name = self.name, let creationTimestamp = self.createdAt else {
             return nil
         }
         return FileDTO(name: name, size: self.size, creationTimestamp: creationTimestamp)
@@ -19,7 +19,7 @@ extension FileEntity: Entity {
     
     func fromDTO(entityDTO: FileDTO) -> Self {
         self.name = entityDTO.name
-        self.creationTimestamp = entityDTO.creationTimestamp
+        self.createdAt = entityDTO.creationTimestamp
         self.size = entityDTO.size
         return self
     }

@@ -8,17 +8,17 @@
 import Foundation
 
 protocol FMDocumentDependencies {
-    func resolveFetchDocumentUseCase() -> FMAllDocumentUseCase
-    func resolveDocumentRepository() -> any FMDocuemntRepository
+    func resolveFetchDocumentUseCase() -> FMAllCategoryUseCase
+    func resolveDocumentRepository() -> any FMDocumentRepository
 }
 
 extension DefaultAppDependencies {
     
-    func resolveFetchDocumentUseCase() -> any FMAllDocumentUseCase {
-        DefaultFMAllDocumentUseCase(dependencies: self)
+    func resolveFetchDocumentUseCase() -> any FMAllCategoryUseCase {
+        DefaultFMAllCategoryUseCase(dependencies: self)
     }
     
-    func resolveDocumentRepository() -> any FMDocuemntRepository {
+    func resolveDocumentRepository() -> any FMDocumentRepository {
         DefaultFMDocuemntRepository(dependencies: self)
     }
 }

@@ -7,10 +7,11 @@
 
 import Foundation
 import Combine
+import CoreData
 
 extension FMCoreDataStorage: FMDocumentStorage {
-    func saveDocument(document: StorageUnitDTO) -> Future<Bool, any Error> {
-        if let document = document as? DocumentDTO {
+    func saveDocument(document: DocumentDTO) -> Future<Bool, any Error> {
+        if let document = document as? FolderDTO {
             return self.saveDocument(document)
         } else if let document = document as? FileDTO {
             return self.saveFile(document)
@@ -19,14 +20,14 @@ extension FMCoreDataStorage: FMDocumentStorage {
         }
     }
     
-    func deleteDocument(document: StorageUnitDTO) {
+    func deleteDocument(document: DocumentDTO) {
         
     }
 }
 
 //MARK: - Save
 fileprivate extension FMCoreDataStorage {
-    func saveDocument(_ document: DocumentDTO) -> Future<Bool, any Error> {
+    func saveDocument(_ document: FolderDTO) -> Future<Bool, any Error> {
         Future { promise in
             self.persistentController.performBackgroundTask { context in
                 _ = FolderEntity(context: context).fromDTO(entityDTO: document)
@@ -59,25 +60,65 @@ fileprivate extension FMCoreDataStorage {
 
 //MARK: - Fetch Document
 extension FMCoreDataStorage {
-    func fetchAllDocuments() async -> [StorageUnitDTO] {
-        var storageDTOs: [StorageUnitDTO] = []
+    func fetchAllDocuments() async -> [DocumentDTO] {
+        var documentDTOs: [DocumentDTO] = []
         let backgroundContext = self.newBackgroundContext
         await backgroundContext.perform {
-            let fetchRequest = StorageUnitEntity.fetchRequest()
+            let fetchRequest = DocumentEntity.fetchRequest()
             do {
                 let storageUnitEntities = try backgroundContext.fetch(fetchRequest)
                 storageUnitEntities.forEach { entity in
                     if let folderEntity = entity as? FolderEntity, let folderDTO = folderEntity.toDTO() {
-                        storageDTOs.append(folderDTO)
+                        documentDTOs.append(folderDTO)
                     } else if let fileEntity = entity as? FileEntity, let fileDTO = fileEntity.toDTO() {
-                        storageDTOs.append(fileDTO)
+                        documentDTOs.append(fileDTO)
                     }
                 }
             } catch {
                 debugPrint("CoreDataResponseStorage Unresolved error \(error), \((error as NSError).userInfo)")
             }
         }
-        return storageDTOs
+        return documentDTOs
+    }
+    
+    func fetchAllCatgeories() async -> [CategoryDTO] {
+        var categoryDTOs: [CategoryDTO] = []
+        let backgroundContext = self.newBackgroundContext
+        await backgroundContext.perform {
+            let fetchRequest = CategoryEntity.fetchRequest()
+            do {
+                let storageUnitEntities = try backgroundContext.fetch(fetchRequest)
+                storageUnitEntities.forEach { categoryEntity in
+                    if let dto = categoryEntity.toDTO() {
+                        categoryDTOs.append(dto)
+                    }
+                    
+                }
+            } catch {
+                debugPrint("CoreDataResponseStorage Unresolved error \(error), \((error as NSError).userInfo)")
+            }
+        }
+        return categoryDTOs
+    }
+    
+    func fetchAllFiles() async -> [FileDTO] {
+        var files: [FileDTO] = []
+        let backgroundContext = self.newBackgroundContext
+        await backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<FileEntity> = FileEntity.fetchRequest()
+            do {
+                let storageUnitEntities = try backgroundContext.fetch(fetchRequest)
+                storageUnitEntities.forEach { categoryEntity in
+                    if let dto = categoryEntity.toDTO() {
+                        files.append(dto)
+                    }
+                    
+                }
+            } catch {
+                debugPrint("CoreDataResponseStorage Unresolved error \(error), \((error as NSError).userInfo)")
+            }
+        }
+        return files
     }
 }
 

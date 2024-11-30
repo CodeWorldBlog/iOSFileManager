@@ -12,6 +12,28 @@
         }
       }
     },
+    "NoRecentDocument" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Recent File"
+          }
+        }
+      }
+    },
+    "Recently" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recently"
+          }
+        }
+      }
+    },
     "Scanner" : {
       "extractionState" : "manual",
       "localizations" : {

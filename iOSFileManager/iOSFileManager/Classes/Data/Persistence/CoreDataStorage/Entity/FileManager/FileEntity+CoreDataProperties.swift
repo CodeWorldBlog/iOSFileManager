@@ -2,7 +2,7 @@
 //  FileEntity+CoreDataProperties.swift
 //  iOSFileManager
 //
-//  Created by Saurav Nagpal on 12/06/24.
+//  Created by Saurav Nagpal on 02/11/24.
 //
 //
 
@@ -16,5 +16,7 @@ extension FileEntity {
         return NSFetchRequest<FileEntity>(entityName: "FileEntity")
     }
 
+    @NSManaged public var lastViewedAt: Date?
+    @NSManaged public var modifiedAt: Date?
 
 }

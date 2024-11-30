@@ -11,9 +11,12 @@ import Combine
 typealias FMStorage = (FMDocumentStorage & FMSettingStorage)
 
 protocol FMDocumentStorage {
-    func saveDocument(document: StorageUnitDTO) -> Future<Bool, Error>
-    func fetchAllDocuments() async -> [StorageUnitDTO]
-    func deleteDocument(document: StorageUnitDTO)
+    func saveDocument(document: DocumentDTO) -> Future<Bool, Error>
+    func fetchAllDocuments() async -> [DocumentDTO]
+    func fetchAllFiles() async -> [FileDTO]
+    func deleteDocument(document: DocumentDTO)
+    
+    func fetchAllCatgeories() async -> [CategoryDTO]
 }
 
 protocol FMSettingStorage {

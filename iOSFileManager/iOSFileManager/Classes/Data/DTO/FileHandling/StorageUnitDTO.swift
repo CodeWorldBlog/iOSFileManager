@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol StorageUnitDTO {
+protocol DocumentDTO {
     var creationTimestamp: Date { get }
     var name: String { get }
     var size: Double { get }    

@@ -1,0 +1,22 @@
+{
+  "configurations" : [
+    {
+      "id" : "622BA3D1-CDDD-4C42-8F5E-D970B91642A4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "addressSanitizer" : {
+      "enabled" : true
+    },
+    "testTimeoutsEnabled" : true,
+    "threadSanitizerEnabled" : true
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

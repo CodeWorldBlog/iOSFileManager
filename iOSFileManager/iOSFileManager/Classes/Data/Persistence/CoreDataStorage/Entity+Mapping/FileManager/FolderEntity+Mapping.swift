@@ -8,18 +8,18 @@
 import Foundation
 
 extension FolderEntity: Entity {
-    typealias EntityDTO = DocumentDTO
+    typealias EntityDTO = FolderDTO
     
-    func toDTO() -> DocumentDTO? {
-        guard let name = self.name, let creationTimestamp = self.creationTimestamp else {
+    func toDTO() -> FolderDTO? {
+        guard let name = self.name, let creationTimestamp = self.createdAt else {
             return nil
         }
-        return DocumentDTO(name: name, size: self.size, creationTimestamp: creationTimestamp)
+        return FolderDTO(name: name, size: self.size, creationTimestamp: creationTimestamp)
     }
     
-    func fromDTO(entityDTO: DocumentDTO) -> Self {
+    func fromDTO(entityDTO: FolderDTO) -> Self {
         self.name = entityDTO.name
-        self.creationTimestamp = entityDTO.creationTimestamp
+        self.createdAt = entityDTO.creationTimestamp
         self.size = entityDTO.size
         return self
     }

@@ -16,7 +16,12 @@ struct FMFinderCoordinatorView: View, FMTabChildView {
 
     var body: some View {
         NavigationStack {
-          
+            FMFinderContentView(dependencies: coordinator.feedDependencies)
+                .navigationDestination(isPresented: $coordinator.displayDocument, destination: {
+                    if let documentCoordinater = coordinator.documentCoordinater {
+                        FMDocumentCoordinatorView(coordinator: documentCoordinater)
+                    }
+                })
         }
     }
 }
